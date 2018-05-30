@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomepageComponent } from './homepage/homepage.component';
 import { RegisterComponent } from './register/register.component';
 import { UsersComponent } from './users/users.component';
+import { UserDetailComponent } from './user-detail/user-detail.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { UsersComponent } from './users/users.component';
     HomepageComponent,
     RegisterComponent,
     UsersComponent,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,
