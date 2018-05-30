@@ -1,0 +1,12 @@
+<h2>Users</h2>
+  <ul class="users">
+    <li *ngFor="let user of users" 
+      class="user"
+      [class.selected]="user === selectedUser" 
+      (click)="onSelectUser(user)">
+      <span class="id">{{user.id}}</span>
+      <span class="name">{{user.name}}</span>
+    </li>
+  </ul>
+  <a routerLink="/">Home</a>
+
