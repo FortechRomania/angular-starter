@@ -9,15 +9,10 @@ import { USERS } from '../mock-users';
 })
 export class UsersComponent implements OnInit {
   users = USERS;
-  selectedUser: User;
 
   constructor() { }
 
   ngOnInit() {
-  }
-
-  onSelectUser(user: User): void {
-    this.selectedUser = user;
   }
 
 }

@@ -13,4 +13,9 @@ export class UserService {
   getUsers(): Observable<User[]> {
     return of(USERS);
   }
+
+  getUser(id: number): Observable<User> {
+    const result = USERS.find(user => user.id === id);
+    return of(result);
+  }
 }
