@@ -1,0 +1,40 @@
+<h1>Register</h1>
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <div class="formControl">
+    <label>First Name:
+      <input formControlName="firstName">
+    </label>
+  </div>
+  <div class="formControl">
+    <label>Last Name:
+      <input formControlName="lastName">
+    </label>
+  </div>
+  <div class="formControl">
+    <label>Username:
+      <input formControlName="username">
+    </label>
+  </div>
+  <div class="formControl">
+    <label>Password:
+      <input formControlName="password">
+    </label>
+  </div>
+  <div class="formControl">
+    <label>Address:
+      <input formControlName="address">
+    </label>
+  </div>
+  <div class="formControl">
+    <label>Phone number:
+      <input formControlName="phone">
+    </label>
+  </div>
+  <div class="formControl">
+    <label>Email:
+      <input formControlName="email">
+    </label>
+  </div>
+  <button type="submit" [disabled]="registerForm.invalid">Save</button>
+</form>
+<a routerLink="/" routerLinkActive="active">Back to homepage</a>

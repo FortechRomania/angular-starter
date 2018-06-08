@@ -1,0 +1,27 @@
+<h1>Login</h1>
+<div *ngIf="username.invalid && (username.dirty || username.touched)">
+  <div *ngIf="username.errors.required">
+    please enter the username
+  </div>
+</div>
+
+<div *ngIf="password.invalid && (password.dirty || password.touched)">
+  <div *ngIf="password.errors.required">
+    please enter the password
+  </div>
+</div>
+
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <label> username:
+    <input class="form-control" formControlName="username">
+  </label>
+  <label> password:
+    <input class="form-control" formControlName="password">
+  </label>
+  <button type="submit" [disabled]="loginForm.invalid">Save</button>
+</form>
+
+<div class="navigation-links">
+  <a routerLink="/" routerLinkActive="active">Back to homepage</a>
+  <a routerLink="/register" routerLinkActive="active">Don't have an account? Register</a>
+</div>

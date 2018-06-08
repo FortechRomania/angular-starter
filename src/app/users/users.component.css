@@ -1,0 +1,26 @@
+.users {
+    margin: 0 0 2em 0;
+    width: 15em;
+}
+
+.user {
+    background-color: #575757;
+    color: white;
+    padding: 5px;
+}
+
+.user a {
+    color: white;
+}
+
+.user-detail-section {
+    margin: .5em;
+    padding: .5em;
+    border: 2px solid #575757;
+    width: 450px; 
+}
+
+.user:hover {
+    background-color: #CFD8DC;
+    color: white;
+}

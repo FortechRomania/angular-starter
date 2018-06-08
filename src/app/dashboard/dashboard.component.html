@@ -1,0 +1,8 @@
+<h2>Top users</h2>
+<div class="grid grid-pad">
+  <a *ngFor="let user of users" class="col-1-4" routerLink='/user/{{user.id}}'>
+    <div class="grid-card">
+      <h4>{{user.name}}</h4>
+    </div>
+  </a>
+</div>
